@@ -14,18 +14,15 @@
 Route::get('/', function () {
     return view('Pages.index');
 });
-
 Route::get('/about', function () {
     return view('Pages.about');
 });
-
 Route::get('/contact', function () {
     return view('Pages.contact');
 });
-
 Route::post('/contact', function () {
 
-    $data = request() ->all();
-    echo "Email: ". $data['email']. '<br>';
-    echo "Message: ". $data['body'];
+    $data = request() -> all();
+    echo "Email: " . $data['email'] . '<br>';
+    echo "Message: " . $data['body'] ;
 });
