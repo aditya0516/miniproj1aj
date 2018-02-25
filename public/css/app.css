@@ -203,9 +203,15 @@ svg:not(:root) {
 }
 
 table {
-    border-collapse: collapse
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
 }
-
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 caption {
     padding-top: .75rem;
     padding-bottom: .75rem;
