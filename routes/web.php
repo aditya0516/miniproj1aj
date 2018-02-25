@@ -26,3 +26,12 @@ Route::post('/contact', function () {
     echo "Email: " . $data['email'] . '<br>';
     echo "Message: " . $data['body'] ;
 });
+Route::get('/signup', function () {
+    return view('Pages.signup');
+});
+Route::get('/login', function () {
+    return view('Pages.login');
+});
+Route::get('/vm', function () {
+    return view('Pages.vm');
+});
